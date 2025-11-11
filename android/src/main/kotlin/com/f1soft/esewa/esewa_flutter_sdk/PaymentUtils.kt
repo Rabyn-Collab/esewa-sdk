@@ -1,23 +1,25 @@
 package com.f1soft.esewa.esewa_flutter_sdk
 
-import com.f1soft.esewapaymentsdk.ESewaConfiguration
-import com.f1soft.esewapaymentsdk.ESewaPayment
+import com.f1soft.esewasdk.EsewaConfiguration
+import com.f1soft.esewasdk.EsewaPayment
+
 
 class PaymentUtils {
 
     companion object {
 
-        fun initConfig(map: HashMap<String, String>): ESewaConfiguration {
-            return ESewaConfiguration()
-                .clientId(map["client_id"]?:"")
-                .secretKey(map["client_secret"]?:"")
-                .environment(map["environment"]?:"")
+        fun initConfig(map: HashMap<String, String>): EsewaConfiguration {
+            return EsewaConfiguration(
+                clientId = map["client_id"]?:"",
+                secretKey = map["client_secret"]?:"",
+                environment = map["environment"]?:""
+            )
         }
 
-        fun initPayment(map: HashMap<String, String>): ESewaPayment {
+        fun initPayment(map: HashMap<String, String>): EsewaPayment {
             when {
                 map["ebp_no"]!=null -> {
-                    return ESewaPayment(
+                    return EsewaPayment(
                         map["product_price"]?:"",
                         map["product_name"]?:"",
                         map["product_id"]?:"",
@@ -28,7 +30,7 @@ class PaymentUtils {
                     )
                 }
                 else -> {
-                    return ESewaPayment(
+                    return EsewaPayment(
                         map["product_price"]?:"",
                         map["product_name"]?:"",
                         map["product_id"]?:"",

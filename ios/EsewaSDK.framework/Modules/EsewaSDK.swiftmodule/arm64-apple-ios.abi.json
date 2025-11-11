@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "EsewaSDK",
+    "printedName": "EsewaSDK",
     "children": [
       {
         "kind": "Import",
@@ -507,6 +507,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1371,6 +1385,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1403,6 +1418,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1448,6 +1464,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1481,6 +1498,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1533,6 +1551,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1615,8 +1647,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -1776,6 +1809,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override",
@@ -1816,6 +1850,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -1827,6 +1862,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1875,6 +1924,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -1901,7 +1957,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "EsewaSDK.EsewaSDKDelegate?"
+                "printedName": "(any EsewaSDK.EsewaSDKDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -1910,8 +1966,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
@@ -1928,12 +1985,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -1961,12 +2018,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -2027,9 +2084,10 @@
             "mangledName": "$s8EsewaSDK34SDKSuccessfulPaymentViewControllerC6bundleSo8NSBundleCSgvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 1,
@@ -2086,6 +2144,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -2202,6 +2261,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -2318,6 +2378,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -2434,6 +2495,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -2550,6 +2612,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -2666,6 +2729,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -2783,6 +2847,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -2899,6 +2964,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -3023,8 +3089,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 10,
@@ -3138,8 +3205,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 11,
@@ -3258,8 +3326,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -3379,6 +3448,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3401,6 +3471,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -3423,6 +3494,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -3445,6 +3517,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -3477,6 +3550,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3509,6 +3583,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3536,6 +3611,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "IBAction",
               "RawDocComment",
@@ -3561,6 +3637,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -3583,6 +3660,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -3637,6 +3715,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3678,6 +3757,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -3690,6 +3770,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -3702,6 +3783,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3809,6 +3904,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3849,6 +3945,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -3875,6 +3972,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3897,6 +3995,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -3908,6 +4007,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -3919,6 +4019,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3988,6 +4102,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4041,6 +4162,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -4157,6 +4279,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -4276,6 +4399,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -4308,6 +4432,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -4330,6 +4455,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -4384,6 +4510,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -4425,6 +4552,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -4437,6 +4565,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -4449,6 +4578,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4511,6 +4654,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4710,7 +4860,23 @@
         "usr": "s:8EsewaSDK0A3LogC",
         "mangledName": "$s8EsewaSDK0A3LogC",
         "moduleName": "EsewaSDK",
-        "isOpen": true
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4748,6 +4914,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -4781,6 +4948,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -4814,6 +4982,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -4843,6 +5012,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4865,6 +5035,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -4887,6 +5058,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -4909,6 +5081,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -4930,6 +5103,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -4957,6 +5131,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -4985,6 +5160,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -5040,6 +5216,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -5081,6 +5258,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -5093,6 +5271,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -5105,6 +5284,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5203,8 +5396,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -5294,8 +5488,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -5385,8 +5580,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -5476,8 +5672,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -5567,8 +5764,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -5658,8 +5856,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -5754,6 +5953,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -5777,6 +5977,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5799,6 +6000,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5821,6 +6023,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5843,6 +6046,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5886,6 +6090,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5919,6 +6124,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -5960,6 +6166,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -5972,6 +6179,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -5986,6 +6194,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6073,9 +6295,10 @@
             "mangledName": "$s8EsewaSDK12BoxTextFieldC11bottomInset12CoreGraphics7CGFloatVvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6124,8 +6347,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6215,8 +6439,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6306,8 +6531,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6397,8 +6623,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6487,9 +6714,10 @@
             "mangledName": "$s8EsewaSDK12BoxTextFieldC8boxLayerSo07CAShapeG0Cvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6537,9 +6765,10 @@
             "mangledName": "$s8EsewaSDK12BoxTextFieldC10errorLabelSo7UILabelCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6587,9 +6816,10 @@
             "mangledName": "$s8EsewaSDK12BoxTextFieldC04textE23BackgroundColorForLightSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6637,9 +6867,10 @@
             "mangledName": "$s8EsewaSDK12BoxTextFieldC04textE22BackgroundColorForDarkSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6687,9 +6918,10 @@
             "mangledName": "$s8EsewaSDK12BoxTextFieldC19esewaMainColorLightSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6737,9 +6969,10 @@
             "mangledName": "$s8EsewaSDK12BoxTextFieldC18esewaMainColorDarkSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6796,8 +7029,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -6912,6 +7146,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -6952,6 +7187,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Required"
@@ -6986,6 +7222,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7020,6 +7257,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7054,6 +7292,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7081,6 +7320,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7104,6 +7344,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7144,6 +7385,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7174,6 +7416,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7198,6 +7441,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7222,6 +7466,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7246,6 +7491,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7270,6 +7516,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -7307,6 +7554,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7343,6 +7591,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7355,6 +7604,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -7371,6 +7621,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7440,6 +7704,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7465,9 +7736,10 @@
             "mangledName": "$s8EsewaSDK13LineTextFieldC11bottomInset12CoreGraphics7CGFloatVvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 0,
@@ -7516,8 +7788,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 1,
@@ -7607,8 +7880,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 2,
@@ -7698,8 +7972,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 3,
@@ -7789,8 +8064,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 4,
@@ -7880,9 +8156,10 @@
             "moduleName": "EsewaSDK",
             "isInternal": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -7907,9 +8184,10 @@
             "mangledName": "$s8EsewaSDK13LineTextFieldC10errorLabelSo7UILabelCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 6,
@@ -7957,9 +8235,10 @@
             "mangledName": "$s8EsewaSDK13LineTextFieldC04textE23BackgroundColorForLightSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 7,
@@ -8007,9 +8286,10 @@
             "mangledName": "$s8EsewaSDK13LineTextFieldC04textE22BackgroundColorForDarkSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 8,
@@ -8057,9 +8337,10 @@
             "mangledName": "$s8EsewaSDK13LineTextFieldC19esewaMainColorLightSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 9,
@@ -8107,9 +8388,10 @@
             "mangledName": "$s8EsewaSDK13LineTextFieldC18esewaMainColorDarkSo7UIColorCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 10,
@@ -8167,6 +8449,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8207,6 +8490,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -8240,6 +8524,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8273,6 +8558,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8306,6 +8592,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8332,6 +8619,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8354,6 +8642,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -8382,6 +8671,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8405,6 +8695,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8428,6 +8719,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8451,6 +8743,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8474,6 +8767,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -8497,8 +8791,9 @@
             "moduleName": "EsewaSDK",
             "isInternal": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -8523,6 +8818,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -8535,6 +8831,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -8549,6 +8846,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8618,6 +8929,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -8793,6 +9111,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9295,6 +9627,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -9306,6 +9652,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -12501,6 +12854,22 @@
             "isOpen": true,
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -12530,10 +12899,31 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -12644,6 +13034,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -12798,6 +13204,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -12932,7 +13354,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "EsewaSDKPaymentDelegate",
-                "printedName": "EsewaSDK.EsewaSDKPaymentDelegate",
+                "printedName": "any EsewaSDK.EsewaSDKPaymentDelegate",
                 "usr": "c:@M@EsewaSDK@objc(pl)EsewaSDKPaymentDelegate"
               }
             ],
@@ -13252,6 +13674,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -13459,7 +13895,23 @@
         "usr": "s:8EsewaSDK0A3ApiC",
         "mangledName": "$s8EsewaSDK0A3ApiC",
         "moduleName": "EsewaSDK",
-        "isOpen": true
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -13494,6 +13946,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -13609,6 +14062,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -13715,7 +14169,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "EsewaSDK.EsewaSDKDelegate?"
+                "printedName": "(any EsewaSDK.EsewaSDKDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -13724,8 +14178,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
@@ -13741,12 +14196,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -13774,12 +14229,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -13841,8 +14296,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -13955,8 +14411,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -14069,8 +14526,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -14183,8 +14641,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -14297,8 +14756,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -14411,8 +14871,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -14538,8 +14999,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -14673,6 +15135,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -14698,6 +15161,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override",
               "RawDocComment"
@@ -14754,6 +15218,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -14795,6 +15260,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -14807,6 +15273,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -14820,6 +15287,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -14882,6 +15363,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -14925,8 +15413,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 0,
@@ -15016,8 +15505,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 1,
@@ -15107,8 +15597,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 2,
@@ -15198,8 +15689,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 3,
@@ -15289,8 +15781,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 4,
@@ -15389,6 +15882,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage"
             ],
@@ -15504,6 +15998,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage"
             ],
@@ -15611,6 +16106,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage"
             ],
@@ -15710,6 +16206,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -15750,6 +16247,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -15781,6 +16279,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -15803,6 +16302,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -15814,6 +16314,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -15826,6 +16327,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -15895,6 +16410,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -15929,8 +16451,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 0,
@@ -16044,8 +16567,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 1,
@@ -16150,9 +16674,10 @@
             "mangledName": "$s8EsewaSDK15ImageButtonViewC04iconcE0So07UIImageE0Cvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 2,
@@ -16200,9 +16725,10 @@
             "mangledName": "$s8EsewaSDK15ImageButtonViewC04icondE0So8UIButtonCvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 3,
@@ -16251,8 +16777,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 4,
@@ -16343,6 +16870,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "IBInspectable",
@@ -16442,6 +16970,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "IBInspectable",
@@ -16559,8 +17088,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 7,
@@ -16697,8 +17227,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "fixedbinaryorder": 8,
             "hasStorage": true,
@@ -16821,6 +17352,7 @@
             "mangledName": "$s8EsewaSDK15ImageButtonViewC5frame11imageHeight0G5WidthACSo6CGRectV_12CoreGraphics7CGFloatVAKtcfc",
             "moduleName": "EsewaSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience"
             ],
@@ -16853,6 +17385,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -16893,6 +17426,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -16915,6 +17449,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -16927,6 +17462,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -16938,6 +17474,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -17007,6 +17557,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17050,8 +17607,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -17141,8 +17699,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -17240,8 +17799,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -17355,8 +17915,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -17467,6 +18028,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -17500,6 +18062,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -17541,6 +18104,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -17553,6 +18117,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -17565,6 +18130,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -17634,6 +18213,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17661,6 +18247,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "AccessControl",
@@ -17762,6 +18349,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -17791,6 +18379,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -17824,6 +18413,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -17865,6 +18455,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -17877,6 +18468,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -17890,6 +18482,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -17959,6 +18565,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17986,6 +18599,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage"
             ],
@@ -18085,6 +18699,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -18125,6 +18740,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Required"
@@ -18158,6 +18774,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -18180,6 +18797,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -18191,6 +18809,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -18203,6 +18822,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -18272,6 +18905,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -18308,6 +18948,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -18423,6 +19064,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -18538,6 +19180,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -18653,6 +19296,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -18768,6 +19412,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -18883,6 +19528,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -18998,6 +19644,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19113,6 +19760,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19228,6 +19876,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19343,6 +19992,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19458,6 +20108,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19573,6 +20224,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19688,6 +20340,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19803,6 +20456,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -19918,6 +20572,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -20033,6 +20688,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -20148,6 +20804,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -20263,6 +20920,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -20378,6 +21036,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -20493,6 +21152,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -20616,8 +21276,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -20735,8 +21396,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -20865,8 +21527,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -20972,7 +21635,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "EsewaSDK.EsewaSDKDelegate?"
+                "printedName": "(any EsewaSDK.EsewaSDKDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -20981,8 +21644,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
@@ -20998,12 +21662,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -21031,12 +21695,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -21090,8 +21754,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -21184,6 +21849,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -21207,6 +21873,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC",
               "RawDocComment"
@@ -21230,6 +21897,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -21252,6 +21920,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "RawDocComment"
             ],
@@ -21274,6 +21943,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -21296,6 +21966,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override",
               "RawDocComment"
@@ -21333,6 +22004,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -21381,6 +22053,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -21435,6 +22108,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -21476,6 +22150,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -21488,6 +22163,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -21501,6 +22177,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21563,6 +22253,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -21608,6 +22305,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -21648,6 +22346,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -21670,6 +22369,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -21681,6 +22381,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "RawDocComment",
           "ObjC"
@@ -21695,6 +22396,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21764,6 +22479,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -21809,6 +22531,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -21849,6 +22572,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -21871,6 +22595,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -21892,6 +22617,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -21904,6 +22630,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -21917,6 +22644,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21986,6 +22727,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -22022,6 +22770,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22138,6 +22887,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22254,6 +23004,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22370,6 +23121,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22486,6 +23238,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22602,6 +23355,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22718,6 +23472,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22834,6 +23589,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -22950,6 +23706,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23066,6 +23823,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23182,6 +23940,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23298,6 +24057,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23414,6 +24174,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23530,6 +24291,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23646,6 +24408,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23762,6 +24525,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23878,6 +24642,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -23994,6 +24759,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -24110,6 +24876,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -24226,6 +24993,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -24350,8 +25118,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 20,
@@ -24470,8 +25239,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -24601,8 +25371,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -24709,7 +25480,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "EsewaSDK.EsewaSDKDelegate?"
+                "printedName": "(any EsewaSDK.EsewaSDKDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -24718,8 +25489,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
@@ -24736,12 +25508,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -24769,12 +25541,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -24835,9 +25607,10 @@
             "mangledName": "$s8EsewaSDK27NewSdkPaymentViewControllerC6bundleSo8NSBundleCSgvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 24,
@@ -24894,8 +25667,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -24989,6 +25763,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -25012,6 +25787,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC",
               "RawDocComment"
@@ -25045,6 +25821,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -25067,6 +25844,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -25089,6 +25867,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -25119,6 +25898,7 @@
             "objc_name": "keyboardWillShow:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -25150,6 +25930,7 @@
             "objc_name": "keyboardWillHide:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -25175,6 +25956,7 @@
             "objc_name": "hideKeyboard",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -25197,6 +25979,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -25219,6 +26002,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "RawDocComment"
             ],
@@ -25241,6 +26025,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -25263,6 +26048,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override",
               "RawDocComment"
@@ -25300,6 +26086,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -25348,6 +26135,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -25402,6 +26190,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -25443,6 +26232,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -25455,6 +26245,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -25467,6 +26258,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -25529,6 +26334,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -25739,6 +26551,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -25750,6 +26576,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -26107,6 +26940,20 @@
               "AccessControl"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -27005,6 +27852,22 @@
         "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -27030,7 +27893,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "EsewaSDK.EsewaSDKDelegate?"
+                "printedName": "(any EsewaSDK.EsewaSDKDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -27039,8 +27902,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
@@ -27057,12 +27921,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -27090,12 +27954,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "EsewaSDK.EsewaSDKDelegate?",
+                    "printedName": "(any EsewaSDK.EsewaSDKDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EsewaSDKDelegate",
-                        "printedName": "EsewaSDK.EsewaSDKDelegate",
+                        "printedName": "any EsewaSDK.EsewaSDKDelegate",
                         "usr": "s:8EsewaSDK0A11SDKDelegateP"
                       }
                     ],
@@ -27156,9 +28020,10 @@
             "mangledName": "$s8EsewaSDK22SdkLoginViewControllerC6bundleSo8NSBundleCSgvp",
             "moduleName": "EsewaSDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 1,
@@ -27223,8 +28088,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -27340,8 +28206,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -27457,8 +28324,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -27574,8 +28442,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -27691,8 +28560,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -27808,8 +28678,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -27917,6 +28788,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28033,6 +28905,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28149,6 +29022,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28265,6 +29139,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28381,6 +29256,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28497,6 +29373,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28613,6 +29490,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28729,6 +29607,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28845,6 +29724,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -28961,6 +29841,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -29077,6 +29958,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -29193,6 +30075,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -29309,6 +30192,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -29425,6 +30309,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -29541,6 +30426,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -29657,6 +30543,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "ReferenceOwnership",
@@ -29773,8 +30660,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 24,
@@ -29864,8 +30752,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 25,
@@ -29976,8 +30865,9 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "fixedbinaryorder": 26,
@@ -30113,6 +31003,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "IBAction",
               "ObjC"
@@ -30141,6 +31032,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "IBAction",
               "ObjC"
@@ -30168,6 +31060,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "RawDocComment"
@@ -30201,6 +31094,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -30234,6 +31128,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -30257,6 +31152,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC",
               "RawDocComment"
@@ -30280,6 +31176,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -30302,6 +31199,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -30324,6 +31222,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "RawDocComment"
             ],
@@ -30346,6 +31245,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -30368,6 +31268,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override",
               "RawDocComment"
@@ -30400,6 +31301,7 @@
             "objc_name": "keyboardWillShow:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "RawDocComment"
@@ -30432,6 +31334,7 @@
             "objc_name": "keyboardWillHide:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -30457,6 +31360,7 @@
             "objc_name": "hideKeyboard",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -30512,6 +31416,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -30553,6 +31458,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -30565,6 +31471,7 @@
         "moduleName": "EsewaSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "ObjC"
         ],
@@ -30577,6 +31484,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -30639,6 +31560,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -32457,6 +33385,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -32689,10 +33631,31 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -32703,10 +33666,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -33999,10 +34962,31 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -34013,10 +34997,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -34044,6 +35028,7 @@
             "static": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -34132,6 +35117,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -34145,6 +35131,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIViewController",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -34159,6 +35146,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -34245,6 +35246,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -34269,6 +35271,7 @@
             "static": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34315,6 +35318,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34360,6 +35364,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34405,6 +35410,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34450,6 +35456,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34500,6 +35507,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34535,6 +35543,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34564,6 +35573,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34599,6 +35609,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34634,6 +35645,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34669,6 +35681,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34704,6 +35717,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34739,6 +35753,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34774,6 +35789,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34809,6 +35825,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34844,6 +35861,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34879,6 +35897,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34914,6 +35933,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34950,6 +35970,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -34986,6 +36007,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35015,6 +36037,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35050,6 +36073,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35085,6 +36109,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35114,6 +36139,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35150,6 +36176,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35186,6 +36213,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35239,6 +36267,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35262,6 +36291,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35285,6 +36315,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35308,6 +36339,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35343,6 +36375,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35380,6 +36413,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35417,6 +36451,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35454,6 +36489,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35528,6 +36564,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -35542,6 +36579,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIView",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -35556,6 +36594,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -35671,10 +36723,32 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -35754,6 +36828,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
             "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
             "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
@@ -35765,13 +36846,6 @@
             "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
             "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
             "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinStringLiteral",
-            "printedName": "_ExpressibleByBuiltinStringLiteral",
-            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
-            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
           },
           {
             "kind": "Conformance",
@@ -36214,12 +37288,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -36371,6 +37439,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -36417,6 +37499,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -36855,6 +37944,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -36909,6 +38012,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -36954,6 +38058,7 @@
             "moduleName": "EsewaSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -36988,6 +38093,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIDevice",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -37001,6 +38107,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -37117,6 +38237,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -37166,6 +38300,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ExpressibleByImageLiteral",
             "printedName": "_ExpressibleByImageLiteral",
             "usr": "s:s26_ExpressibleByImageLiteralP",
@@ -37210,13 +38351,17 @@
         "declKind": "Struct",
         "usr": "s:7SwiftUI5ColorV",
         "mangledName": "$s7SwiftUI5ColorV",
-        "moduleName": "SwiftUI",
+        "moduleName": "SwiftUICore",
         "intro_Macosx": "10.15",
         "intro_iOS": "13.0",
         "intro_tvOS": "13.0",
         "intro_watchOS": "6.0",
         "declAttributes": [
           "Frozen",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
           "Available",
           "Available",
           "Available",
@@ -37254,38 +38399,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "Transferable",
-            "printedName": "Transferable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Representation",
-                "printedName": "Representation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some CoreTransferable.TransferRepresentation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransferRepresentation",
-                        "printedName": "CoreTransferable.TransferRepresentation",
-                        "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16CoreTransferable0B0P",
-            "mangledName": "$s16CoreTransferable0B0P"
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -37330,6 +38461,35 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -37370,13 +38530,17 @@
         "declKind": "Struct",
         "usr": "s:7SwiftUI5ImageV",
         "mangledName": "$s7SwiftUI5ImageV",
-        "moduleName": "SwiftUI",
+        "moduleName": "SwiftUICore",
         "intro_Macosx": "10.15",
         "intro_iOS": "13.0",
         "intro_tvOS": "13.0",
         "intro_watchOS": "6.0",
         "declAttributes": [
           "Frozen",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
           "Available",
           "Available",
           "Available",
@@ -37397,6 +38561,27 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -37440,12 +38625,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -37474,6 +38653,27 @@
       "offset": 325,
       "length": 20,
       "value": "\"com.esewa.EsewaSDK\""
+    },
+    {
+      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1295,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1311,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1326,
+      "length": 5,
+      "value": "255.0"
     },
     {
       "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/Extensions.swift",
@@ -37733,20 +38933,6 @@
       "offset": 7669,
       "length": 9,
       "value": "\"#95DD80\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 6,
-      "value": "\"test\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 307,
-      "length": 6,
-      "value": "\"live\""
     },
     {
       "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
@@ -38204,76 +39390,6 @@
       "value": "\"iPhone_12Mini\""
     },
     {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 11867,
-      "length": 23,
-      "value": "\"iPhone_4_or_iPhone 4S\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 11914,
-      "length": 45,
-      "value": "\"iPhone_5, iPhone_5s, iPhone 5c_or_iPhone SE\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 11983,
-      "length": 43,
-      "value": "\"iPhone_6, iPhone_6S, iPhone_7_or_iPhone 8\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 12054,
-      "length": 63,
-      "value": "\"iPhone_6_Plus, iPhone_6S_Plus, iPhone_7_Plus_or_iPhone_8_Plus\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 12141,
-      "length": 10,
-      "value": "\"iPhone_X\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 12176,
-      "length": 11,
-      "value": "\"iPhone_11\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 12212,
-      "length": 11,
-      "value": "\"iPhone_XR\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 12247,
-      "length": 15,
-      "value": "\"iPadOrUnknown\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 12291,
-      "length": 15,
-      "value": "\"iPhone_12Mini\""
-    },
-    {
-      "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/EsewaSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 1110,
-      "length": 8,
-      "value": "\"EsewaSDK.EsewaSDK\""
-    },
-    {
       "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/FormInputTokenView.swift",
       "kind": "BooleanLiteral",
       "offset": 677,
@@ -38409,9 +39525,9 @@
     {
       "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/Reachability.swift",
       "kind": "BooleanLiteral",
-      "offset": 3434,
-      "length": 5,
-      "value": "false"
+      "offset": 3473,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/user\/Desktop\/esewa-ios-sdk\/EsewaSDK\/Reachability.swift",
@@ -38442,147 +39558,147 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 723,
       "length": 7,
       "value": "\"brand\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 16,
       "value": "\"cirlce-pattern\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1012,
       "length": 12,
       "value": "\"dot-circle\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1159,
       "length": 15,
       "value": "\"ic_background\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1322,
       "length": 22,
       "value": "\"ic_background_splash\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1473,
       "length": 12,
       "value": "\"ic_ellipse\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1636,
       "length": 24,
       "value": "\"ic_esewa_launcher_logo\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1796,
       "length": 16,
       "value": "\"ic_green_close\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1957,
       "length": 21,
       "value": "\"ic_img_cirlce_check\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2101,
       "length": 9,
       "value": "\"ic_left\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2233,
       "length": 9,
       "value": "\"ic_more\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2404,
       "length": 30,
       "value": "\"ic_outline-sim-card-download\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2578,
       "length": 20,
       "value": "\"ic_question-circle\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2731,
       "length": 14,
       "value": "\"ic_rectangle\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2874,
       "length": 12,
       "value": "\"ic_warpper\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3015,
       "length": 12,
       "value": "\"icon_close\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3171,
       "length": 20,
       "value": "\"icon_hide_password\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3327,
       "length": 16,
       "value": "\"icon_my_device\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3478,
       "length": 15,
       "value": "\"icon_password\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3620,
       "length": 11,
       "value": "\"icon_user\""
     },
     {
-      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphonesimulator\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/EsewaSDK-cqftvteeqaaqvdcwmgczhxthkryr\/Build\/Intermediates.noindex\/EsewaSDK.build\/Debug-iphoneos\/EsewaSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3775,
       "length": 20,

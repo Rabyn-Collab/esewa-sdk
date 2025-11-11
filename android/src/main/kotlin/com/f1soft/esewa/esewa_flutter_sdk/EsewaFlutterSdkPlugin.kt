@@ -22,9 +22,9 @@ import com.f1soft.esewa.esewa_flutter_sdk.Constants.PAYMENT_METHOD_FAILURE
 import com.f1soft.esewa.esewa_flutter_sdk.Constants.PAYMENT_METHOD_NAME
 import com.f1soft.esewa.esewa_flutter_sdk.Constants.PAYMENT_METHOD_SUCCESS
 import com.f1soft.esewa.esewa_flutter_sdk.Constants.PAYMENT_REQ_CODE
-import com.f1soft.esewapaymentsdk.ESewaConfiguration
-import com.f1soft.esewapaymentsdk.ESewaPayment
-import com.f1soft.esewapaymentsdk.ui.ESewaPaymentActivity
+import com.f1soft.esewasdk.EsewaConfiguration
+import com.f1soft.esewasdk.EsewaPayment
+import com.f1soft.esewasdk.ui.ESewaPaymentActivity
 
 /** EsewaFlutterSdkPlugin */
 
@@ -33,8 +33,8 @@ class EsewaFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
 
     private lateinit var channel: MethodChannel
     private var activity: Activity? = null
-    private var config: ESewaConfiguration? = null
-    private var payment: ESewaPayment? = null
+    private var config: EsewaConfiguration? = null
+    private var payment: EsewaPayment? = null
     private var _result : MethodChannel.Result? = null
     private val TAG = this::class.java.simpleName
 
@@ -77,8 +77,8 @@ class EsewaFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
         Log.d(TAG, "payment: ${PaymentUtils.initPayment(paymentMap)}")
 
         Intent(activity, ESewaPaymentActivity::class.java).apply {
-            putExtra(ESewaConfiguration.ESEWA_CONFIGURATION,PaymentUtils.initConfig(configMap))
-            putExtra(ESewaPayment.ESEWA_PAYMENT, PaymentUtils.initPayment(paymentMap))
+            putExtra(EsewaConfiguration.ESEWA_CONFIGURATION,PaymentUtils.initConfig(configMap))
+            putExtra(EsewaPayment.ESEWA_PAYMENT, PaymentUtils.initPayment(paymentMap))
         }.also {
             activity?.startActivityForResult(it, PAYMENT_REQ_CODE)
         }
@@ -111,7 +111,7 @@ class EsewaFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
             PAYMENT_REQ_CODE -> {
                 when (resultCode) {
                     Activity.RESULT_OK -> {
-                        val paymentResult = data?.getStringExtra(ESewaPayment.EXTRA_RESULT_MESSAGE)
+                        val paymentResult = data?.getStringExtra(EsewaPayment.EXTRA_RESULT_MESSAGE)
                         channel.invokeMethod(PAYMENT_METHOD_SUCCESS,paymentResult)
                         Log.d(TAG, "Payment Result Data: $paymentResult")
 
@@ -120,8 +120,8 @@ class EsewaFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
                         channel.invokeMethod(PAYMENT_METHOD_CANCELLATION,"Payment Cancelled By User")
                         Log.d(TAG, "Canceled By User")
                     }
-                    ESewaPayment.RESULT_EXTRAS_INVALID -> {
-                        val paymentResult = data?.getStringExtra(ESewaPayment.EXTRA_RESULT_MESSAGE)
+                    EsewaPayment.RESULT_EXTRAS_INVALID -> {
+                        val paymentResult = data?.getStringExtra(EsewaPayment.EXTRA_RESULT_MESSAGE)
                         channel.invokeMethod(PAYMENT_METHOD_FAILURE,paymentResult)
                         Log.d(TAG, "Payment Result Data: $paymentResult")
                     }
